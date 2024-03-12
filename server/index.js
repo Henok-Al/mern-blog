@@ -14,6 +14,7 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.use("/users", userRouter); // http://localhost:5000/users/signup
+
 app.get("/", (req, res) => {
   res.send("Welcome to tour API");
 });
